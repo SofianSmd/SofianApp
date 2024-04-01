@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SofianApp.SecondPage">
+
+    <ScrollView>
+        
+        <StackLayout>
+            <Label Text="Bienvenue dans mon application" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Start" 
+                   Padding="30"/>
+            
+            <Label
+                    Text="Cette application utilise une API sur des pays"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    Padding="10"/>
+                    
+
+            <Button Text="Click me!"
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start"/>
+            
+            
+        </StackLayout>
+        
+    </ScrollView>
+
+</ContentPage>
+

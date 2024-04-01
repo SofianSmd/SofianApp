@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SofianApp.MainPage">
+    
+    
+
+
+        
+        <StackLayout
+            
+            Padding="20"
+            BackgroundColor="White"
+            Spacing="20"
+            >
+            
+            <Label Text="Bienvenue dans mon application" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Start" 
+                   Padding="0"
+                   FontSize="24"
+                   TextDecorations="Underline"
+                   FontAutoScalingEnabled="True"
+                   FontAttributes="Bold"
+                   FontFamily=""
+                   />
+            
+            <Label
+                    Text="Cette application utilise une API contenant des infos sur les differents pays du monde !"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    Padding="0"
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    FontFamily=""
+                    />
+            
+            <CarouselView
+                x:Name="CarouselView"
+                HeightRequest="200"
+                Loop="True"
+                IndicatorView="IndicateurView">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>security1.png</x:String>
+                        <x:String>security2.png</x:String>
+                        <x:String>security3.png</x:String>
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="Black" CornerRadius="15">
+                            <Image Source="{Binding .}" Aspect="AspectFit" WidthRequest="300" HeightRequest="180"/>
+                        </Frame>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <IndicatorView x:Name="IndicateurView" IndicatorColor="LightGray" SelectedIndicatorColor="DarkGray" />
+            
+            <Label
+                    Text="Veuillez lire 3 documents liés aux conditions d'utilisation de l'application, puis cliquer sur J'accepte ou sur Je refuse ."
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    Padding="0"
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    FontFamily=""
+                    />
+            
+            
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="30">
+                
+                <Button Text="J'accepte"
+                        HorizontalOptions="Center" 
+                        WidthRequest="150"
+                        
+                />
+                
+                <Button Text="Je refuse"
+                        HorizontalOptions="Center"
+                        WidthRequest="150"
+                />
+                
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="30">
+                <Image Source="image2.png" WidthRequest="150" HeightRequest="150" />
+                <Image Source="image2.png" WidthRequest="150" HeightRequest="150" />
+            </StackLayout>
+            
+                    
+            
+
+            
+            
+            
+            
+            
+        </StackLayout>
+        
+
+
+</ContentPage>
+
