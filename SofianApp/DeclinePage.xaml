@@ -2,10 +2,15 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SofianApp.DeclinePage">
+             x:Class="SofianApp.DeclinePage"
+             >
     <ContentPage.Content>
-        <StackLayout>
-            <Image Source="decline.gif" />
-        </StackLayout>
+            <Image x:Name="DeclineGif"
+                   Source="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWJoMXV2ZXNtbHFhbWw1bGVwOWo5b2duMm9pM2UxbndybXphbXVkaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/V3w1nzSZM7yZYlvYWR/giphy.gif"
+                   IsAnimationPlaying="False"
+                   WidthRequest="400"
+                   VerticalOptions="Center"
+                   />
+        
     </ContentPage.Content>
 </ContentPage>

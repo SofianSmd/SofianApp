@@ -4,8 +4,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SofianApp.AcceptPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Image Source="accept.gif" />
-        </StackLayout>
+        
+            <Image x:Name="AcceptGif"
+                   Source="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXA1dWhoZTJ6eW9kamZtamI4ZXJuMG94cTVpcm1rZ2N2anVubjBtOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/tIeCLkB8geYtW/giphy.gif" 
+                   IsAnimationPlaying="False"
+                   WidthRequest="400"
+                   VerticalOptions="Center"/>
+        
     </ContentPage.Content>
 </ContentPage>

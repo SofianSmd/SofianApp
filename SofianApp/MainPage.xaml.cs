@@ -16,16 +16,18 @@ namespace SofianApp
                 "security3.png"
             };
             
-            async void OnAcceptButtonClicked(object sender, EventArgs e)
-            {
-                await Navigation.PushAsync(new AcceptPage());
-            }
             
-            async void OnDeclineButtonClicked(object sender, EventArgs e)
-            {
-                await Navigation.PushAsync(new DeclinePage());
-            }
 
         }
+        async void OnAcceptButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AcceptPage());
+        }
+            
+        async void OnDeclineButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DeclinePage());
+        }
     }
+    
 }

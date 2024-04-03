@@ -59,7 +59,7 @@
             <IndicatorView x:Name="IndicateurView" IndicatorColor="LightGray" SelectedIndicatorColor="DarkGray" />
             
             <Label
-                    Text="Veuillez lire 3 documents liés aux conditions d'utilisation de l'application, puis cliquer sur J'accepte ou sur Je refuse ."
+                    Text="Veuillez lire les 3 documents liés aux conditions d'utilisation de l'application, puis cliquer sur J'accepte ou sur Je refuse ."
                     HorizontalOptions="Center"
                     VerticalOptions="Start"
                     Padding="0"
@@ -75,12 +75,15 @@
                 <Button Text="J'accepte"
                         HorizontalOptions="Center" 
                         WidthRequest="150"
+                        Clicked="OnAcceptButtonClicked"
                         
                 />
                 
                 <Button Text="Je refuse"
                         HorizontalOptions="Center"
                         WidthRequest="150"
+                        Clicked="OnDeclineButtonClicked"
+                        
                 />
                 
             </StackLayout>

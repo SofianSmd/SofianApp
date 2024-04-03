@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SofianApp.CountryDatailPage">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="20"
+            Spacing="60">
+            
+            <Label Text="{Binding WelcomeMessage}"
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" 
+                   FontSize="24"
+                   TextDecorations="Underline"
+                   FontAttributes="Bold"
+                   FontFamily=""
+                   
+            />
+            
+            <Frame BorderColor="Black" >
+                <Image Source="{Binding Media.Flag}" WidthRequest="250" HeightRequest="200" />
+            </Frame>
+            
+            
+            <StackLayout HorizontalOptions="Center" Spacing="60">
+                
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="• " FontSize="Large" VerticalOptions="Center" FontAttributes="Bold" FontFamily=""  />
+                    <Label Text="{Binding CapitalMessage}" VerticalOptions="Center" FontAttributes="Bold" FontFamily=""/>
+                </StackLayout>
+            
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="• " FontSize="Large" VerticalOptions="Center" FontAttributes="Bold" FontFamily=""/>
+                    <Label Text="{Binding CurrencyMessage}" VerticalOptions="Center" FontAttributes="Bold" FontFamily=""/>
+                </StackLayout>
+            
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="• " FontSize="Large" VerticalOptions="Center" FontAttributes="Bold" FontFamily=""/>
+                    <Label Text="{Binding PopulationMessage}" VerticalOptions="Center" FontAttributes="Bold" FontFamily=""/>
+                </StackLayout>
+            
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="• " FontSize="Large" VerticalOptions="Center" FontAttributes="Bold" FontFamily="" />
+                    <Label Text="{Binding PhoneMessage}" VerticalOptions="Center" FontAttributes="Bold" FontFamily=""/>
+                </StackLayout>
+                
+            </StackLayout>
+            
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

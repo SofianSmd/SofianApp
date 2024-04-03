@@ -12,4 +12,11 @@ public partial class DeclinePage : ContentPage
     {
         InitializeComponent();
     }
+    
+    protected async override void OnAppearing()
+    {
+        base.OnAppearing();
+        await Task.Delay(100);
+        DeclineGif.IsAnimationPlaying = true;
+    }
 }

@@ -19,15 +19,15 @@
             ContentTemplate="{DataTemplate local:MainPage}"/>
     
         <ShellContent
-            Title="Tout"
+            Title="Tout les pays"
             Icon="world.png"
-            ContentTemplate="{DataTemplate local:MainPage}"
+            ContentTemplate="{DataTemplate local:CountriesPage}"
              />
     
         <ShellContent
-            Title="Continents"
-            Icon="continent.png"
-            ContentTemplate="{DataTemplate local:MainPage}"
+            Title="Ajouter un pays"
+            Icon="plus.png"
+            ContentTemplate="{DataTemplate local:AddPage}"
              />
     
         <ShellContent
