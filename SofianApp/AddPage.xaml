@@ -1,0 +1,46 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SofianApp.AddPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="35" Padding="20">
+            
+            <StackLayout>
+                <Label Text="Nom du pays" />
+                <Entry x:Name="NameEntry" />
+            </StackLayout>
+            
+            <StackLayout>
+                <Label Text="Abbreviation du pays" />
+                <Entry x:Name="AbbreviationEntry" />
+            </StackLayout>
+            
+            
+            <StackLayout>
+                <Label Text="Capitale" />
+                <Entry x:Name="CapitalEntry" />
+            </StackLayout>
+            
+            <StackLayout>
+                <Label Text="Monnaie du pays" />
+                <Entry x:Name="CurrencyEntry" />
+            </StackLayout>
+            
+            <StackLayout>
+                <Label Text="Population" />
+                <Entry x:Name="PopulationEntry" />
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="URL du drapeau" />
+                <Entry x:Name="FlagURLEntry" />
+            </StackLayout>
+            
+            <StackLayout>
+                <Label Text="Code téléphone du pays" />
+                <Entry x:Name="PhoneCodeEntry" />
+            </StackLayout>
+            
+            <Button Text="Ajouter" Clicked="Button_OnClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

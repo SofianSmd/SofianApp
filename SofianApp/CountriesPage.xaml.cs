@@ -12,7 +12,7 @@ namespace SofianApp
         public CountriesPage()
         {
             InitializeComponent();
-            BindingContext = new CountryViewModel();
+            BindingContext = App.CountryViewModel;
             
         }
         
