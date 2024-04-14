@@ -1,0 +1,15 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SofianApp.DeletePage">
+    <ContentPage.Content>
+        <StackLayout Spacing="35" Padding="20">
+            
+            <StackLayout>
+                <Label Text="Nom du pays" />
+                <Entry x:Name="NameEntryToDelete" />
+            </StackLayout>
+            
+            <Button Text="Supprimer" Clicked="DelButton_OnClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

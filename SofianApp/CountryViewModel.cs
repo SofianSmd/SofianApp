@@ -37,7 +37,7 @@ namespace SofianApp
             LoadCountries();
         }
 
-        private async void LoadCountries()
+        public async Task LoadCountries()
         {
             
             Countries = new ObservableCollection<Country>(await _apiService.GetDataAsync<List<Country>>("https://api.sampleapis.com/countries/countries"));

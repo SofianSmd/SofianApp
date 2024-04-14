@@ -23,7 +23,6 @@
             Title="Tout les pays"
             Icon="world.png"
             ContentTemplate="{DataTemplate local:CountriesPage}"
-           
             />
     
         <ShellContent
@@ -33,10 +32,10 @@
              />
     
         <ShellContent
-            Title="Recherche"
-            Icon="recherche.png"
-            ContentTemplate="{DataTemplate local:MainPage}"
-            BindingContext="{Binding}"/>
+            Title="Autres"
+            Icon="plus.png"
+            ContentTemplate="{DataTemplate local:OtherPage}"
+            />
         
     </TabBar>
 

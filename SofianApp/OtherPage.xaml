@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SofianApp.OtherPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="50" Padding="30" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Button Text="Supprimer un pays" Clicked="OnDeleteCountryClicked" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+            <Button Text="Remettre la liste par défaut" Clicked="ActualizeClicked" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
